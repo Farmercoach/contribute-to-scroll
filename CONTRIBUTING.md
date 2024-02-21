@@ -1,42 +1,15 @@
-# Contribute to Scroll Guidelines
+SCROLL ZKVM 
 
-Thanks for helping to build the Scroll ecosystem! Contribution guidelines for this project are a bit odd, because the goal is to collect community contributions made in other repos — some in the scroll-tech organization, but many outside of it.
+End Game 2.0
 
-Please remember, you're representing Scroll's community when you engage with other code repos. Please follow their best practices and be considerate of any reviewer's time.
+The current paradigm in decentralized Zkvm technology hinges on the principle of global consensus. Essentially, the primary aim of contemporary blockchain systems is to achieve global synchronization among all network participants, ensuring a uniform system perspective. While this might not be the sole approach to constructing decentralized ledgers, it is rooted in the foundational theory of distributed systems, which predominantly revolves around consensus. As of now, we lack alternative methods to bypass this consensus requirement.
 
-## Getting Started
+Consequently, the prevailing strategy for enhancing scalability and achieving high-performance decentralized ledgers involves the development of lightweight blockchains that operate atop the robust layer 1 blockchains equipped with comprehensive global consensus mechanisms, which are indispensable.
 
-### Finding an Issue
+At present, these secondary layer 2 chains are generally developed using Zero-knowledge technology, enabling the verification of the Layer 2 network's state by submitting a concise proof to the Layer 1 chain. Alternatively, they employ optimistic roll-ups, where any incorrect state of the Layer 2 system can be corrected by issuing a challenge verifiable on the Layer 1 chain.
 
-On our Issues page, you'll find a number of ways to contribute. Many are "Integrations" that help add Scroll and our testnets to ecosystem tooling, while others might be complex and imaginative projects!
+In both scenarios, Layer 2 blockchains rely on Layer 1 for verification purposes without being an integral part of it. They function more as ancillary applications. For instance, they cannot leverage the established consensus on Layer 1 beyond verification – the architecture of these Layer 2 systems tends to be somewhat centralized, and they could benefit from increased decentralization, such as in the selection of an entity responsible for submitting state proofs to the Layer 1 chain.
 
-### Creating an Issue
+Moreover, the apparent separation of these chains from their parent chain suggests a potential alternative configuration where the chains are effectively integrated within the foundational Layer 1 chain. This integration could facilitate trustless interactions among subchains, enabling, for example, a decentralized application on one chain to initiate flash loans from another. Essentially, different Layer 2 chains could act as shards of a unified state, reminiscent of earlier sharding concepts for decentralization, sharing consensus assurances with the foundational Layer 1 chain and collectively forming a cohesive network.
 
-Have an idea you'd like to see built? Want to see Scroll integrated in your favorite developer tooling? To the best of your ability, make an issue describing the project, linking to the appropriate repo and outlining what changes would need to be made. Someone from our team can then add additional tasks, context or even spec out or implement the code needed.
-
-#### How to create an issue?
-To create an issue, you have several options:
-- Use predefined issue templates found [here](https://github.com/scroll-tech/contribute-to-scroll/issues/new/choose). With these you can:
-   - **"Add Scroll to some tool or library"** - _Integrate Scroll into your favourite project_
-   - **"Propose new Skunkworks project"** - _Have some innovative idea you want built on top of Scroll? Propose it here!_
-- [Open a blank issue](https://github.com/scroll-tech/contribute-to-scroll/issues/new) if none of the previous options fit your proposal
-
-And that's it! You've started your contribution to Scroll journey 📜 🚀
-
-### Making a PR
-
-Please start by making a PR to any external repo first. You can then create a draft PR to this repo so that our team can help comment on and review any contributions to external projects.
-
-Remember to review each external project's `CONTRIBUTING.md` file before making a PR. Scroll is community-first, and that means respecting the norms and requests of other code communities.
-
-#### Making a PR to this Repo
-
-1. Fork the `contribute-to-scroll` repo.
-2. Add your contribution, showing the Issue it closes (or contributes to), along with the link to the PR raised in another repo.
-3. Describe your work and fill out the template.
-4. Add a new entry to the `contributions.json` file by following the same format as the other projects listed.
-5. Additional contributors will also need to make a commit to the PR (or a later PR). We suggest they do so by adding their name to the `contributions.json` file to receive acknowledgement.
-
-### Collecting your GitPOAP
-
-Coming Soon.
+In my view, this integration represents the ultimate evolution of the Layer 1/Layer 2 narrative. I hope and believe this is the vision behind Scroll ZKVM, which aims to establish an ecosystem of interconnected Layer 2 chains reliant on the foundational Layer 1 layer for consensus. The incorporation of Zero-Knowledge proofs into these chains will follow, with the ultimate goal of linking all chains using Zero-Knowledge technology. This will transform all Layer 2 chains into shards of a unified state, with many Layer 1 chain serving as a beacon chain, facilitating trustless interactions and providing consensus and economic incentives.
